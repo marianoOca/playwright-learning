@@ -5,7 +5,7 @@ test.describe("Home page with no auth", () => {
     await page.goto("https://practicesoftwaretesting.com/");
   });
 
-  test("visula test", async ({ page }) => {
+  test("visual test", async ({ page }) => {
     await page.waitForLoadState("networkidle");
     await expect(page).toHaveScreenshot("home-page-no-auth.png", {
       mask: [page.getByTitle("Practice Software Testing - Toolshop")],

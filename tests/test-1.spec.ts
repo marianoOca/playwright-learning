@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test('test', async ({ page }) => {
+test('test1', async ({ page }) => {
   await page.goto('https://playwright.dev/');
   await page.getByRole('heading', { name: 'Playwright enables reliable' }).locator('span').click();
   await page.getByRole('heading', { name: 'Playwright enables reliable' }).click();
